@@ -2,8 +2,8 @@
   --bg: transparent;              /* fa vedere lo sfondo del Google Site */
   --text:#111111;
   --muted:#4b5563;
-  --border:#e5e7eb;
-  --card: rgba(255,255,255,0.92); /* card bianche leggibili sopra lo sfondo */
+  --border: rgba(120,110,170,0.18);
+  --card: rgba(247,245,255,0.92); /* card lavanda chiarissime */
   --accent:#1155cc; /* Google Sites-ish blue; change to match dibernardogroup */
 }
 
