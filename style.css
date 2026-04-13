@@ -1,14 +1,16 @@
 :root{
-  --bg:#ffffff;
+  --bg: transparent;              /* fa vedere lo sfondo del Google Site */
   --text:#111111;
   --muted:#4b5563;
   --border:#e5e7eb;
-  --card:#ffffff;
+  --card: rgba(255,255,255,0.92); /* card bianche leggibili sopra lo sfondo */
   --accent:#1155cc; /* Google Sites-ish blue; change to match dibernardogroup */
 }
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial, Helvetica, sans-serif;line-height:1.55}
+body { background: transparent; }
+.container { background: transparent; }
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
@@ -77,7 +79,7 @@ a:hover{text-decoration:underline}
 
 .app-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 @media (max-width:900px){.app-grid{grid-template-columns:1fr}}
-.app-card{border:1px solid var(--border);border-radius:14px;padding:14px 14px 16px;background:#fff}
+.app-card{border:1px solid var(--border);border-radius:14px;padding:14px 14px 16px;background:var(--card)}
 .app-card h3{margin:0 0 6px;font-size:17px}
 .app-card p{margin:0;color:var(--muted);font-size:14px}
 
