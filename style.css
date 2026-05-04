@@ -77,11 +77,22 @@ a:hover{text-decoration:underline}
 
 .breadcrumb{margin-top:10px;font-size:14px;color:var(--muted)}
 .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;align-items:start;margin-top:18px}
-.hero .media{ margin-top: 12px; }
+.hero .media{
+  margin-top: 12px;
+  display: flex;
+  justify-content: center; /* centra il figure-box nella colonna */
+  align-items:center;
+}
 @media (max-width:900px){.hero{grid-template-columns:1fr}}
 .hero h1{font-size:42px;margin:0;letter-spacing:-0.02em}
 .hero p{margin:10px 0 0;color:var(--muted);max-width:70ch}
-.hero .media img{width:100%;border-radius:16px;border:1px solid var(--border);background:#f3f4f6}
+.hero .media img{
+  width:100%;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#f3f4f6;
+  display:block;
+}
 .hero .media video{
   width: 100%;
   border-radius: 16px;
@@ -107,10 +118,31 @@ a:hover{text-decoration:underline}
 
 .footer-note{margin-top:28px;color:var(--muted);font-size:13px}
 
+.figure-box{
+  width: 100%;
+  max-width: 720px;   /* scegli tu */
+  margin: 0 auto;     /* centra il box */
+}
+
+.figure-box img{
+  width: 100%;
+  display: block;
+}
+
 .figure-credit{
   margin-top: 8px;
+  padding: 0 6px;     /* rientro a sinistra/destra */
+  /* Questo crea il “rettangolo” più stretto e centrato */
+  width: min(100%, 620px);  /* scegli 520–720 a gusto */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Testo NON centrato */
+  text-align: left;
+
   font-size: 13px;
   color: var(--muted);
+  line-height: 1.4;
 }
 
 .figure-credit a{
